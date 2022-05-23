@@ -1,2 +1,2 @@
 #!/bin/bash
-echo '$(tail -1 $(head -3 iacta))'
+awk 'NR==3' iacta
