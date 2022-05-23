@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -mindepth 0 -type f -empty | cut -f 1
+find . -mindepth 0 -type f -empty | cut -d '/' 
