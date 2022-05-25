@@ -1,0 +1,1 @@
+<h1>Init files and variables scripts</h1>
