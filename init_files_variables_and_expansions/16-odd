@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(split -n r/1/2)
+split -n r/1/2
