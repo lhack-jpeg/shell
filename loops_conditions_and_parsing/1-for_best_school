@@ -3,14 +3,14 @@
 i="Best School"
 for i in "Best School"
 do
-    echo $i
-    echo $i
-    echo $i
-    echo $i
-    echo $i
-    echo $i
-    echo $i
-    echo $i
-    echo $i
-    echo $i
+    echo "$i"
+    echo "$i"
+    echo "$i"
+    echo "$i"
+    echo "$i"
+    echo "$i"
+    echo "$i"
+    echo "$i"
+    echo "$i"
+    echo "$i"
 done
