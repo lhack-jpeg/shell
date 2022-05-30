@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Script to show BASH PID witout using PS
-IDS=$(pidof bash)
-for i in $IDS
+ID=$(pgrep 'bash')
+for i in $ID
 do
     echo "$i bash"
 done
+
