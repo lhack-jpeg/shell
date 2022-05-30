@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Script to kill script 4
-pkill -9 '^4-to$'
+# Script to kill script 4 using kill
+BASHPID=$(pidof bash)
+kill -9 $BASHPID
