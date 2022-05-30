@@ -2,17 +2,15 @@
 # script to display fizz buzz on numbers 0-100 fizz number is multiple of 3 buzz is multiple of 5
 for i in {1..100}
 do
-    if [ $(($i % 3)) = 0 ]
-    then
-	echo "Fizz"
-    fi
-    if [ $(($i % 5)) = 0 ]
-    then
-	echo "Buzz"
-    fi
-    if [ $(($i % 3)) = 0 ] && [ $(($i % 5)) = 0 ]
+    if [ $((i % 3)) = 0 ] && [ $((i % 5)) = 0 ]
     then
 	echo "FizzBuzz"
+    elif [ $((i % 3)) = 0 ]
+    then
+	echo "Fizz"
+    elif [ $((i % 5)) = 0 ]
+    then
+	echo "Buzz"
     else
 	echo "$i"
     fi
