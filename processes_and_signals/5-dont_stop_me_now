@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Script to kill script 4 using kill
-BASHPID=$(pgrep 'bash')
-kill -9 "$BASHPID"
+PROCESS_ID=$(pgrep 'bash')
+kill -15 "$PROCESS_ID"
