@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Script to kill script 4 using kill
-PROCESS_ID=$(pgrep 'bash')
+PROCESS_ID=$(pgrep -la 'bash' | grep './4-to_infinity_and_beyond' | awk '{print $1}')
 kill -15 "$PROCESS_ID"
