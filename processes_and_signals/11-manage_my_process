@@ -2,8 +2,7 @@
 # this script is to manipulate the manage_my_process
 # Get postional arguments
 PROC="$1"
-case
-    for $PROC in
+case $PROC in
 	start)
 	    ./manage_my_process &
 	    echo "$!" >> /var/run/my_process.pid &
@@ -24,4 +23,4 @@ case
 	*)
 	    echo "Usage: manage_my_process {start|stop|restart}"
 	    ;;
-    esac
+esac
