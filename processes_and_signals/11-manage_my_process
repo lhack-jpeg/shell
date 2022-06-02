@@ -5,7 +5,7 @@ PROC="$1"
 case $PROC in
 	start)
 	    ./manage_my_process &
-	    echo "$!" >> /var/run/my_process.pid &
+	    echo "$!" > /var/run/my_process.pid &
 	    echo "manage_my_process started"
 	    ;;
 	stop)
@@ -17,7 +17,7 @@ case $PROC in
 	    pkill -f './manage_my_process' &
 	    sudo rm -f /var/run/my_process.pid
 	    ./manage_my_process &
-	    echo "$!" >> /var/run/my_process.pid
+	    echo "$!" > /var/run/my_process.pid
 	    echo "manage_my_process restarted"
 	    ;;
 	*)
