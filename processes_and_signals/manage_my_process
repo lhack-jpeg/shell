@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# this script will indefinitely write to a file
+
+while true
+do
+    echo "I am alive" >> /tmp/my_process
+done
