@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Script to do a range of processes
+SCRIPTID="pgrep -laf 'bash' | grep '10-process_and_pid_file' | awk '{print $1}'"
+echo "$SCRIPTID" > /var/run/myscript.pid
+trap "echo I hate the kill command" SIGTERM
+trap "echo Y U no love me?!" SIGINT
+trap "rm -f /var/run/myscript.pid" SIGQUIT SIGTERM
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
